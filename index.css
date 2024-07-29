@@ -1,3 +1,29 @@
 body {
-    background-color: grey;
+    background-color: rgb(26, 24, 24);
+    color: aliceblue;
+}
+
+
+.mountain-image {
+    /* min-width: 300px;
+    max-width: 400px;
+    width: 50%
+    width: max(300px, 50%);
+    width: min(400px, 80%) */
+    width: clamp(300px, 50%, 400px);
+}
+
+.parent{
+    height: 100px;
+    border: solid red;
+    padding: 10px;
+    width: 500px;
+}
+
+.child{
+    height: 50%;
+    /* height: 50vh; */
+    background-color: blue;
+    width: 50vw;
+
 }
