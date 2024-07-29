@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(26, 24, 24);
+    color: aliceblue;
+    text-align: center
+}
+
+h1 {
+    font-size: 28px;
+}
+
+@media screen and (min-width: 410px) {
+    h1{
+        font-size: 52px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    h1{
+        font-size: 76px;
+    }
+}
+
+@media print {
+    body{
+        background-color: white;
+        color: black;
+    }
+    h1{
+        font-weight: lighter;
+    }
+}
+
+@media (orientation: landscape) {
+    h1{
+        background-color: red;
+    }
+}
+
+@media (orientation: portrait) {
+    h1{
+        background-color: blue;
+    }
+}
